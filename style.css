@@ -1,0 +1,50 @@
+/* Menghilangkan margin default browser */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container untuk elemen UI di atas AR */
+#ui-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none; /* Agar klik tetap tembus ke AR */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Badge status di bagian atas */
+.status-badge {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    pointer-events: auto;
+}
+
+/* Tombol interaktif */
+#reset-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    pointer-events: auto;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#reset-btn:hover {
+    background: #0056b3;
+}
